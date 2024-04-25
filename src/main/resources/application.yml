@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: kafka-producer
+
+  kafka:
+    producer:
+      bootstrap-server: localhost:9092
+      key-Serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-Serializer: org.apache.kafka.common.serialization.StringSerializer
+
+    topic:
+      name: realtime_data
